@@ -52,7 +52,7 @@
                 <input type="text" placeholder="Apellido" name="Apellido">
                 <input type="text" placeholder="Rut" name="Rut">
                 <input type="text" placeholder="Correo Electrónico" name="Correo">
-                <input type="text" placeholder="Usuario" name="usuario">
+                <input type="text" placeholder="Nombre de Usuario (apodo)" name="usuario">
                 <input type="text" placeholder="Tu area?" name="Area">
                 <input type="password" placeholder="Contraseña" name="pass">
                 <input type="password" placeholder="Repita su contraseña" name="rpass">
