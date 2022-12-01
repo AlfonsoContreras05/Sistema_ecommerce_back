@@ -1,8 +1,8 @@
 <?php
     session_start();
 
-    if(isset($_SESSION['email'])){
-        header("location: bienvenido.php");
+    if(isset($_SESSION['Correo'])){
+        header("location: ./bienvenido.php");
     }
 ?>
 
@@ -38,24 +38,24 @@
         <!-- Formulario login y registro -->
         <div class="contenedor_login-register">
             <!-- Login -->
-            <form action="" class="formulario_login">
+            <form action="php/login_usuario.php" class="formulario_login" method="POST">
                 <h2>Iniciar Sesión</h2>
-                <input type="text" placeholder="Correo Electrónico">
-                <input type="password" placeholder="Contraseña">
+                <input type="text" placeholder="Correo Electrónico" name="Correo" require>
+                <input type="password" placeholder="Contraseña" name="pass" require>
                 <button>Entrar</button>
             </form>
             <!-- Registro -->
                 <form action="./php/registro_usuario.php" class="formulario_register" method="POST">
                 <h2>Registrarse</h2>
 
-                <input type="text" placeholder="Nombre" name="Nombre">
-                <input type="text" placeholder="Apellido" name="Apellido">
-                <input type="text" placeholder="Rut" name="Rut">
-                <input type="text" placeholder="Correo Electrónico" name="Correo">
-                <input type="text" placeholder="Nombre de Usuario (apodo)" name="usuario">
-                <input type="text" placeholder="Tu area?" name="Area">
-                <input type="password" placeholder="Contraseña" name="pass">
-                <input type="password" placeholder="Repita su contraseña" name="rpass">
+                <input type="text" placeholder="Nombre" name="Nombre" require>
+                <input type="text" placeholder="Apellido" name="Apellido" require>
+                <input type="text" placeholder="Rut" name="Rut" require>
+                <input type="email" placeholder="Correo Electrónico" name="Correo" require>
+                <input type="text" placeholder="Nombre de Usuario (apodo)" name="usuario" require>
+                <input type="text" placeholder="Tu area?" name="Area" require>
+                <input type="password" placeholder="Contraseña" name="pass" require>
+                <input type="password" placeholder="Repita su contraseña" name="rpass" require>
 
                 <button>Registrarse</button>
             </form>

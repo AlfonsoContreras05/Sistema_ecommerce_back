@@ -8,10 +8,11 @@
     $usuario = $_POST['usuario'];
     $area = $_POST['Area'];
     $pass = $_POST['pass'];
-    $rpass = $_POST['rpass'];
+    //encriptamiento basico de contraseña
+    $pass = hash('sha512',$pass);
 
-    $query = "INSERT INTO usuarios(Nombre,Apellido,Rut,Correo,usuario,Area,pass,rpass)
-    VALUES('$nombre','$apellido','$rut','$mail','$usuario','$area','$pass','$rpass')";
+    $query = "INSERT INTO usuarios(Nombre,Apellido,Rut,Correo,usuario,Area,pass)
+    VALUES('$nombre','$apellido','$rut','$mail','$usuario','$area','$pass')";
 
     //verificando que no se repitan los datos en la bd
     
