@@ -45,17 +45,17 @@
                 <button>Entrar</button>
             </form>
             <!-- Registro -->
-                <form action="./php/registro_usuario.php" class="formulario_register" method="POST">
+                <form action="./php/registro_usuario.php" class="formulario_register" method="POST" onsubmit="return validar();">
                 <h2>Registrarse</h2>
 
-                <input type="text" placeholder="Nombre" name="Nombre" require>
-                <input type="text" placeholder="Apellido" name="Apellido" require>
-                <input type="text" placeholder="Rut" name="Rut" require>
-                <input type="email" placeholder="Correo Electrónico" name="Correo" require>
-                <input type="text" placeholder="Nombre de Usuario (apodo)" name="usuario" require>
-                <input type="text" placeholder="Tu area?" name="Area" require>
-                <input type="password" placeholder="Contraseña" name="pass" require>
-                <input type="password" placeholder="Repita su contraseña" name="rpass" require>
+                <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" require>
+                <input type="text" placeholder="Apellido" name="Apellido" id="Apellido" require>
+                <input type="text" placeholder="Rut" name="Rut" id="Rut" require>
+                <input type="email" placeholder="Correo Electrónico" name="Correo" id="Correo" require>
+                <input type="text" placeholder="Nombre de Usuario (apodo)" name="usuario" id="usuario" require>
+                <input type="text" placeholder="Tu area?" name="Area" id="Area"require>
+                <input type="password" placeholder="Contraseña" name="pass" id="pass" require>
+                <input type="password" placeholder="Repita su contraseña" name="rpass" id="rpass" require>
 
                 <button>Registrarse</button>
             </form>

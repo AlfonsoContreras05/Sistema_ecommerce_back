@@ -69,7 +69,7 @@
                                 <li><a href="#">Proximamente</a></li>
                             </ul>
                         </li>
-                        <li><a href="php/cerrar_sesion.php">Cerrar sesion</a></li>
+                        <li><a href="./php/cerrar_session.php">Cerrar sesion</a></li>
                     </ul>
                 </nav>
             </div>

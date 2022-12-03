@@ -59,3 +59,42 @@ function register() {
 
     }
 }
+
+function validar (){
+    var nombre, apellido, rut , correo ,usuario ,area , pass;
+    nombre = document.getElementById("Nombre").value;
+    apellido = document.getElementById("Apellido").value;
+    rut = document.getElementById("Rut").value;
+    correo = document.getElementById("Correo").value;
+    usuario = document.getElementById("usuario").value;
+    area = document.getElementById("Area").value;
+    pass = document.getElementById("pass").value;
+
+    if(nombre === "" || apellido === "" || rut === "" || correo === "" || usuario === "" || area === "" || pass === ""){
+        alert("Todos los campos son obligatorios")
+        return false;
+    }
+    else if(nombre.length > 40 || nombre.length < 3){
+        alert("el nombre debe contener entre 3 y 40 caracteres");
+        return false;
+    }
+    else if(apellido.length > 40 || apellido.length < 3){
+        alert("el apellido debe contener entre 3 y 40 caracteres");
+        return false;
+    }
+    else if(correo.length > 50 || correo.length < 3){
+        alert("el correo debe contener entre 3 y 40 caracteres");
+        return false;
+    }
+    else if(usuario.length > 20 || usuario.length < 3){
+        alert("el usuario debe contener entre 3 y 20 caracteres");
+        return false;
+    }
+    else if(pass.length > 20 || pass.length < 8){
+        alert("La contraseña debe contener al menos 8 caracteres y maximo 20");
+        return false;
+    }
+   
+
+
+}
