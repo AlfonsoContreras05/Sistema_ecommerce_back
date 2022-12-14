@@ -53,7 +53,17 @@
                 <input type="text" placeholder="Rut" name="Rut" id="Rut" require>
                 <input type="email" placeholder="Correo Electrónico" name="Correo" id="Correo" require>
                 <input type="text" placeholder="Nombre de Usuario (apodo)" name="usuario" id="usuario" require>
-                <input type="text" placeholder="Tu area?" name="Area" id="Area"require>
+                <!-- <input type="text" placeholder="Tu area?" name="Area" id="Area"require> -->
+                <div class="select">
+                    <select type="text" name="Area" id="Area" require>
+                        <option value="">Elija su area</option>
+                        <option value="Cliente">Cliente</option>
+                        <option value="Garzon">Garzon</option>
+                        <option value="Cocina">Cocina</option>
+                        <option value="Bar">Bar</option>
+                        <option value="Bodega">Bodega</option>
+                    </select>
+                </div>
                 <input type="password" placeholder="Contraseña" name="pass" id="pass" require>
                 <input type="password" placeholder="Repita su contraseña" name="rpass" id="rpass" require>
 

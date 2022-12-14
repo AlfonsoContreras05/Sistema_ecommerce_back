@@ -56,7 +56,7 @@
                                 <li><a href="#">Platos</a></li>
                                 <li><a href="#">Postres</a></li>
                                 <li><a href="#">Cafe</a></li>
-                                <li><a href="../final/menu/Carta/cartabar.html">Bar</a></li>
+                                <li><a href="./Menu/Carta/cartabar.html">Bar</a></li>
                             </ul>
                         </li>
                         <li><a href="#">Nosotros</a>

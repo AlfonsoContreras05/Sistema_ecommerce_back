@@ -70,6 +70,8 @@ function validar (){
     area = document.getElementById("Area").value;
     pass = document.getElementById("pass").value;
 
+    expresion = /\w+@\w+\.+[a-z]/;
+
     if(nombre === "" || apellido === "" || rut === "" || correo === "" || usuario === "" || area === "" || pass === ""){
         alert("Todos los campos son obligatorios")
         return false;
@@ -85,6 +87,10 @@ function validar (){
     else if(correo.length > 50 || correo.length < 3){
         alert("el correo debe contener entre 3 y 40 caracteres");
         return false;
+    }
+    else if(!expresion.test(correo)){
+        alert("El correo no es valido");
+        return false
     }
     else if(usuario.length > 20 || usuario.length < 3){
         alert("el usuario debe contener entre 3 y 20 caracteres");
