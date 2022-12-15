@@ -61,7 +61,7 @@
                         <option value="Garzon">Garzon</option>
                         <option value="Cocina">Cocina</option>
                         <option value="Bar">Bar</option>
-                        <option value="Bodega">Bodega</option>
+                        <!-- <option value="Bodega">Bodega</option> -->
                     </select>
                 </div>
                 <input type="password" placeholder="Contraseña" name="pass" id="pass" require>
