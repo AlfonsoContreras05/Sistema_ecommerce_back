@@ -63,10 +63,9 @@
                         <option value="Bar">Bar</option>
                         <!-- <option value="Bodega">Bodega</option> -->
                     </select>
-                </div>
+                </div>                    
                 <input type="password" placeholder="Contraseña" name="pass" id="pass" require>
                 <input type="password" placeholder="Repita su contraseña" name="rpass" id="rpass" require>
-
                 <button>Registrarse</button>
             </form>
         </div>

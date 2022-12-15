@@ -69,6 +69,7 @@ function validar (){
     usuario = document.getElementById("usuario").value;
     area = document.getElementById("Area").value;
     pass = document.getElementById("pass").value;
+    rpass = document.getElementById("rpass").value;
 
     expresion = /\w+@\w+\.+[a-z]/;
 
@@ -100,7 +101,9 @@ function validar (){
         alert("La contraseña debe contener al menos 8 caracteres y maximo 20");
         return false;
     }
+    else if(pass != rpass){
+        alert("Las contraseñas deben ser iguales en ambos campos");
+        return false;
+    }
    
-
-
 }

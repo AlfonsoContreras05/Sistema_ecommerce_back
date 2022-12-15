@@ -1,5 +1,5 @@
 <?php
-    $conexion = mysqli_connect("localhost","id20016548_alfonsov1","1Y(Ps\UjU1%U~RqV","id20016548_prueba1");
+    $conexion = mysqli_connect("localhost","root","","login_register_db");
 
    /*if($conexion){
         echo "conectado exitosamente";
