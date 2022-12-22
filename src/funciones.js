@@ -1,6 +1,5 @@
 document.getElementById("btn_iniciar-sesion").addEventListener("click", iniciar_sesion);
 document.getElementById("btn_registarse").addEventListener("click", register);
-
 window.addEventListener("resize", ancho_pagina);
 
 // Declarando variables

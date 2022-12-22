@@ -13,11 +13,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="./src/estilos.css">
-
     <title>Login y Registro</title>
 </head>
 <body>
@@ -47,13 +44,11 @@
             <!-- Registro -->
                 <form action="./php/registro_usuario.php" class="formulario_register" method="POST" onsubmit="return validar();">
                 <h2>Registrarse</h2>
-
                 <input type="text" placeholder="Nombre" name="Nombre" id="Nombre" require>
                 <input type="text" placeholder="Apellido" name="Apellido" id="Apellido" require>
                 <input type="text" placeholder="Rut" name="Rut" id="Rut" require>
                 <input type="email" placeholder="Correo Electrónico" name="Correo" id="Correo" require>
                 <input type="text" placeholder="Nombre de Usuario (apodo)" name="usuario" id="usuario" require>
-                <!-- <input type="text" placeholder="Tu area?" name="Area" id="Area"require> -->
                 <div class="select">
                     <select type="text" name="Area" id="Area" require>
                         <option value="">Elija su area</option>
@@ -61,7 +56,6 @@
                         <option value="Garzon">Garzon</option>
                         <option value="Cocina">Cocina</option>
                         <option value="Bar">Bar</option>
-                        <!-- <option value="Bodega">Bodega</option> -->
                     </select>
                 </div>                    
                 <input type="password" placeholder="Contraseña" name="pass" id="pass" require>

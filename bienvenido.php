@@ -1,5 +1,4 @@
 <?php
-
     session_start();
     if(isset($_SESSION['Correo'])){
         echo '
@@ -12,9 +11,7 @@
         session_destroy();
         die();
     }
-
 ?>
-
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -36,13 +33,11 @@
             </div>
         </div>
         <div class="container__menu">
-
             <div class="menu">
                 <input type="checkbox" id="check__menu">
                 <label id="#label__check" for="check__menu">
                     <i class="fa-solid fa-bars icon__menu"></i>
                 </label>
-                
                 <nav>
                     <ul>
                         <li><a href="#" id="selected"></a></li>
@@ -72,7 +67,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <article>
             <h2>Home</h2>
@@ -91,10 +85,5 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut magnam exercitationem earum hic autem ratione, aliquam veniam ut facilis veritatis rem, praesentium repellendus nisi quas itaque quasi dolore sapiente ducimus?</p>
         </article>
     </main>
-
-
-
-
-
 </body>
 </html>
