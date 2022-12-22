@@ -13,7 +13,7 @@ if (!empty($_SESSION['active'])) {
                         </button>
                     </div>';
         } else {
-            require_once "../php/conexion.php";
+            require_once "./conexion2.php";
             $user = mysqli_real_escape_string($conexion, $_POST['usuario']);
             $clave = md5(mysqli_real_escape_string($conexion, $_POST['clave']));
             $query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario = '$user' AND clave = '$clave'");
@@ -65,12 +65,12 @@ if (!empty($_SESSION['active'])) {
                         <!-- Nested Row within Card Body -->
                         <div class="row">
                             <div class="col-lg-6 d-none d-lg-block bg-login-image">
-                                <img class="img-thumbnail" src="assets/img/logo.png" alt="">
+                                <img class="img-thumbnail" src="../assets/img/logo.jpg" alt="">
                             </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center">
-                                        <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                        <h1 class="h4 text-gray-900 mb-4">Bienvenido Administrador!</h1>
                                         <?php echo (isset($alert)) ? $alert : ''; ?>
                                     </div>
                                     <form class="user" method="POST" action="" autocomplete="off">
