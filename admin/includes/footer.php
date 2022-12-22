@@ -1,8 +1,8 @@
 </div>
-<!-- /.container-fluid -->
+<!-- /.container -->
 
 </div>
-<!-- End of Main Content -->
+<!-- fin del main -->
 
 <!-- Footer -->
 <footer class="sticky-footer bg-white">
@@ -12,18 +12,18 @@
         </div>
     </div>
 </footer>
-<!-- End of Footer -->
+<!-- fin Footer -->
 
 </div>
-<!-- End of Content Wrapper -->
+<!-- fin Content Wrapper -->
 
 </div>
-<!-- End of Page Wrapper -->
+<!-- fin Page Wrapper -->
 
-<!-- Scroll to Top Button-->
+<!-- scroll boton->
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
-</a>
+</a>-->
 
 
 <!-- Bootstrap core JavaScript-->

@@ -1,3 +1,7 @@
+<!--Las peticiones Ajax son ejecutadas por el código JavaScript, el cual envía una petición a una URL y
+ cuando recibe una respuesta, una función de devolución puede ser ejecutada la cual recibe como argumento
+  la respuesta del servidor y realiza algo con ella-->
+
 <?php
 require_once "./conexion.php";
 if (isset($_POST)) {

@@ -1,6 +1,5 @@
 <?php
     include './conexion.php';
-
     $nombre = $_POST['Nombre'];
     $apellido = $_POST['Apellido'];
     $rut = $_POST['Rut'];
@@ -10,12 +9,9 @@
     $pass = $_POST['pass'];
     //encriptamiento basico de contraseña
     $pass = hash('sha512',$pass);
-
     $query = "INSERT INTO usuarios(Nombre,Apellido,Rut,Correo,usuario,Area,pass)
     VALUES('$nombre','$apellido','$rut','$mail','$usuario','$area','$pass')";
-
     //verificando que no se repitan los datos en la bd
-    
     $verificar_correo = mysqli_query($conexion, "SELECT * FROM usuarios WHERE Correo ='$mail'");
     if(mysqli_num_rows($verificar_correo) > 0){
         echo '
@@ -43,8 +39,6 @@
         </script>';
         exit();
     }
-
-
     $ejecutar = mysqli_query($conexion,$query);
 
     if($ejecutar){

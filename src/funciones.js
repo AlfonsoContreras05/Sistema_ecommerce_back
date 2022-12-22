@@ -107,6 +107,28 @@ function validar (){
    
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*formatRut:(rut)=>{
     //XX.XXX.XXX-X
     const newRut = rut.replace(/\./g,'').replace(/\-/g, '').trim().toLowerCase();
