@@ -18,6 +18,9 @@
     <title>Login y Registro</title>
 </head>
 <body>
+    <div class="buttons">
+            <button class="pulse"><a href="./admin/index.php">Admin</a></button>
+    </div>
     <main>
         <div class="contenedor_todo">
             <div class="caja_trasera">

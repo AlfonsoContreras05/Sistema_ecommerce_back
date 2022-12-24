@@ -5,7 +5,7 @@ if (!empty($_SESSION['active'])) {
 } else {
     if (!empty($_POST)) {
         $alert = '';
-        if (empty($_POST['usuario']) || empty($_POST['clave'])) {
+        if (empty($_POST['Correo']) || empty($_POST['pass'])) {
             $alert = '<div class="alert alert-danger text-center alert-dismissible fade show" role="alert">
                         Ingrese usuario y contraseña
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -14,9 +14,11 @@ if (!empty($_SESSION['active'])) {
                     </div>';
         } else {
             require_once "./conexion2.php";
-            $user = mysqli_real_escape_string($conexion, $_POST['usuario']);
-            $clave = md5(mysqli_real_escape_string($conexion, $_POST['clave']));
-            $query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE usuario = '$user' AND clave = '$clave'");
+            $user = mysqli_real_escape_string($conexion, $_POST['Correo']);
+            //$clave = md5(mysqli_real_escape_string($conexion, $_POST['pass']));
+            $clave = $_POST['pass'];
+            //$clave = hash('sha512', $pass);
+            $query = mysqli_query($conexion, "SELECT * FROM usuarios WHERE Correo = '$user' AND pass = '$clave'");
             mysqli_close($conexion);
             $resultado = mysqli_num_rows($query);
             if ($resultado > 0) {
@@ -75,10 +77,10 @@ if (!empty($_SESSION['active'])) {
                                     </div>
                                     <form class="user" method="POST" action="" autocomplete="off">
                                         <div class="form-group">
-                                            <input type="text" class="form-control form-control-user" id="usuario" name="usuario" placeholder="Usuario...">
+                                            <input type="text" class="form-control form-control-user" id="Correo" name="Correo" placeholder="Correo...">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" class="form-control form-control-user" id="clave" name="clave" placeholder="Password">
+                                            <input type="password" class="form-control form-control-user" id="pass" name="pass" placeholder="Contraseña">
                                         </div>
                                         <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Login

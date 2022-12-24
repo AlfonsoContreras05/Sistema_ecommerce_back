@@ -5,7 +5,6 @@
     text-decoration: none;
     font-family: 'Open Sans', 'Roboto, ' sans-serif; 
 }
-
 body {
     background-image: url(./fondo_registro.jpg);
     background-size: cover;
@@ -13,21 +12,18 @@ body {
     background-position: center;
     background-attachment: fixed;
 }
-
 main {
     width: 100%;
     padding: 20px;
     margin: auto;
     margin-top: 100px;
 }
-
 .contenedor_todo {
     width: 100%;
     max-width: 800px;
     margin: 5% auto;
     position: relative;
 }
-
 .caja_trasera {
     width: 100%;
     padding: 10px 20px;
@@ -63,7 +59,6 @@ main {
         background: white;
         color: #e546fd;
 }
-
 /* Formularios */
 .contenedor_login-register {
     display: flex;
@@ -108,12 +103,10 @@ main {
             cursor: pointer;
             outline: none;
 }
-
 .formulario_login {
     opacity: 1;
     display: block;
 }
-
 .formulario_register {
     display: noneflex;
 }
@@ -125,7 +118,6 @@ main {
     overflow: hidden;
     background-color: #fff;
 }
-
 .select:before {
     content: '';
     position: absolute;
@@ -139,7 +131,6 @@ main {
     z-index: 5;
     pointer-events: none;
 }
-
 .select select {
     padding: 5px 8px;
     width: 130%;
@@ -149,6 +140,8 @@ main {
     background-image: none;
     appearance: none;
 }
+/*btn adm*/
+
 
 /* Responsive design */
 @media screen and (max-width:850px) {

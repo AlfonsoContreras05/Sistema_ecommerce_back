@@ -8,7 +8,7 @@
 <footer class="sticky-footer bg-white">
     <div class="container my-auto">
         <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Your Website 2020</span>
+            <span>Copyright &copy; Orfheres 2022</span>
         </div>
     </div>
 </footer>
@@ -20,10 +20,10 @@
 </div>
 <!-- fin Page Wrapper -->
 
-<!-- scroll boton->
+<!-- scroll boton-->
 <a class="scroll-to-top rounded" href="#page-top">
     <i class="fas fa-angle-up"></i>
-</a>-->
+</a>
 
 
 <!-- Bootstrap core JavaScript-->

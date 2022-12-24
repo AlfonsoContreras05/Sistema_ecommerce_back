@@ -1,5 +1,5 @@
 <?php
-require_once "../conexion.php";
+require_once "./conexion2.php";
 
 if (isset($_POST)) {
     if (!empty($_POST)) {
