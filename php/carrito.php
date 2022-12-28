@@ -29,6 +29,7 @@ require_once "./config.php";
             </div>
         </nav>
     </div>
+    
     <!-- Header-->
     <header class="bg-dark py-5">
         <div class="container px-4 px-lg-5 my-5">
@@ -38,6 +39,7 @@ require_once "./config.php";
             </div>
         </div>
     </header>
+    
     <section class="py-5">
         <div class="container px-4 px-lg-5">
             <div class="row">
@@ -49,6 +51,7 @@ require_once "./config.php";
                                     <th>#</th>
                                     <th>Producto</th>
                                     <th>Precio</th>
+                                    <th>Mesa</th>
                                     <th>Cantidad</th>
                                     <th>Sub Total</th>
                                 </tr>
@@ -68,12 +71,7 @@ require_once "./config.php";
             </div>
         </div>
     </section>
-    <!-- Footer-->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; orfheres 2022</p>
-        </div>
-    </footer>
+
     <!-- Bootstrap  JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- theme JS-->
@@ -105,6 +103,7 @@ require_once "./config.php";
                                 <td>${element.id}</td>
                                 <td>${element.nombre}</td>
                                 <td>${element.precio}</td>
+                                <td>${element.mesa}</td>
                                 <td>1</td>
                                 <td>${element.precio}</td>
                             </tr>
@@ -146,5 +145,10 @@ require_once "./config.php";
         }
     </script>
 </body>
-
+    <!-- Footer-->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; orfheres 2022</p>
+        </div>
+    </footer>
 </html>

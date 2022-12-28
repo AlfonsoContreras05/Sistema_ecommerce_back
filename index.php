@@ -8,7 +8,6 @@
 
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,9 +17,10 @@
     <title>Login y Registro</title>
 </head>
 <body>
-    <div class="buttons">
-            <button class="pulse"><a href="./admin/index.php">Admin</a></button>
+    <div id="boton">
+            <button id="boton"><a href="./admin/index.php">Admin</a></button>
     </div>
+    
     <main>
         <div class="contenedor_todo">
             <div class="caja_trasera">
@@ -57,8 +57,8 @@
                         <option value="">Elija su area</option>
                         <option value="Cliente">Cliente</option>
                         <option value="Garzon">Garzon</option>
-                        <option value="Cocina">Cocina</option>
-                        <option value="Bar">Bar</option>
+                        <!-- <option value="Cocina">Cocina</option>
+                        <option value="Bar">Bar</option> -->
                     </select>
                 </div>                    
                 <input type="password" placeholder="Contraseña" name="pass" id="pass" require>
@@ -68,6 +68,8 @@
         </div>
         </div>
     </main>
+
+    
   <script src="./src/funciones.js"></script>
 </body>
 

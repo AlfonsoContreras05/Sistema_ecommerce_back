@@ -15,6 +15,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../assets/css/styles.css" rel="stylesheet" />
     <link href="../assets/css/estilos.css" rel="stylesheet" />
+    <link href="../assets/css/proceso.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -49,6 +50,24 @@
             </div>
         </div>
     </header>
+    <div class="btn-toolbar btn-group-full-width px-4 px-lg-5 my-5" role="toolbar" aria-label="Toolbar with button groups" >
+    <!-- <div class="w-auto p-3">Width auto</div> -->
+        <div class="btn-group me-2 btn-group-full-width" role="group" aria-label="First group">
+            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary">4</button>
+            <button type="button" class="btn btn-primary">5</button>
+            <button type="button" class="btn btn-primary">6</button>
+            <button type="button" class="btn btn-primary">7</button>
+            <button type="button" class="btn btn-primary">8</button>
+            <button type="button" class="btn btn-primary">9</button>
+            <button type="button" class="btn btn-primary">10</button>
+            <button type="button" class="btn btn-primary">11</button>
+            <button type="button" class="btn btn-primary">12</button>
+
+        </div>
+    </div>
     <section class="py-5">
         <div class="container px-4 px-lg-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
