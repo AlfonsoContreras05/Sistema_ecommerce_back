@@ -7,6 +7,7 @@ if (isset($_POST)) {
         for ($i=0; $i < count($_POST['data']); $i++) { 
             $id = $_POST['data'][$i]['id'];
             $query = mysqli_query($conexion, "SELECT * FROM productos WHERE id = $id");
+            //$query = mysqli_query($conexion, "SELECT * FROM mesas WHERE id = $id");
             $result = mysqli_fetch_assoc($query);
             $data['id'] = $result['id'];
             $data['precio'] = $result['precio_rebajado'];

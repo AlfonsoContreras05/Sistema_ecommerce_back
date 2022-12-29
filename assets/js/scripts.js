@@ -68,6 +68,7 @@ $(document).ready(function () {
     })
 });
 
+
 function mostrar(){
     if (localStorage.getItem("productos") != null) {
         let array = JSON.parse(localStorage.getItem('productos'));
@@ -76,3 +77,9 @@ function mostrar(){
         }
     }
 }
+
+/*function mostrarMesa() {
+    var mesa = document.getElementById("numeroMesa").value;
+    alert(mesa);
+}
+*/

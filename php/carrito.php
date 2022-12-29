@@ -1,5 +1,17 @@
-<?php require_once "./conexion.php";
-require_once "./config.php";
+<?php
+  require_once "./conexion.php";
+  require_once "./config.php";
+
+  // Lee el valor de la cookie "mesa"
+  $mesa = isset($_COOKIE['mesa']) ? $_COOKIE['mesa'] : 0;
+
+  // Sobrescribe el valor de $mesa con el parámetro $_POST['numeroMesa'] si existe
+  if (isset($_POST['numeroMesa'])) {
+    $mesa = $_POST['numeroMesa'];
+    setcookie('mesa', $mesa, time() + (86400 * 30), '/');
+  }
+
+  // Resto del código que utiliza $mesa aquí
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -62,6 +74,9 @@ require_once "./config.php";
                     </div>
                 </div>
                 <div class="col-md-5 ms-auto">
+                    <div id="mi-div" data-mesa="<?php echo $mesa; ?>">
+                        <h4><script>let mesa = document.getElementById('mi-div').dataset.mesa;</script></h4>
+                    </div>
                     <h4>Total a Pagar: <span id="total_pagar">0</span></h4>
                     <div class="d-grid gap-2">
                         <div id="paypal-button-container"></div>
@@ -79,9 +94,13 @@ require_once "./config.php";
     <script src="https://www.paypal.com/sdk/js?client-id=AbFiNaJKKc9kTHC0RjDmzhkW_SQWuu-0zcYYZy4zIJKe4D5p4ioxijLqwCqrCqgXIA5mymApfyzpH8_P&currency=USD"<?php echo CLIENT_ID; ?>&locale=<?php echo LOCALE; ?>"></script>
     <script src="../assets/js/scripts.js"></script>
     <script>
-        mostrarCarrito();
 
+
+
+        mostrarCarrito();
+        
         function mostrarCarrito() {
+            
             if (localStorage.getItem("productos") != null) {
                 let array = JSON.parse(localStorage.getItem('productos'));
                 if (array.length > 0) {
@@ -103,11 +122,11 @@ require_once "./config.php";
                                 <td>${element.id}</td>
                                 <td>${element.nombre}</td>
                                 <td>${element.precio}</td>
-                                <td>${element.mesa}</td>
+                                <td>`+mesa+`</td>
                                 <td>1</td>
                                 <td>${element.precio}</td>
                             </tr>
-                            `;
+                            `
                             });
                             $('#tblCarrito').html(html);
                             $('#total_pagar').text(res.total);

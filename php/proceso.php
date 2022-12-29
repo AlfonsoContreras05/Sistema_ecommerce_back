@@ -50,23 +50,12 @@
             </div>
         </div>
     </header>
-    <div class="btn-toolbar btn-group-full-width px-4 px-lg-5 my-5" role="toolbar" aria-label="Toolbar with button groups" >
-    <!-- <div class="w-auto p-3">Width auto</div> -->
-        <div class="btn-group me-2 btn-group-full-width" role="group" aria-label="First group">
-            <button type="button" class="btn btn-primary">1</button>
-            <button type="button" class="btn btn-primary">2</button>
-            <button type="button" class="btn btn-primary">3</button>
-            <button type="button" class="btn btn-primary">4</button>
-            <button type="button" class="btn btn-primary">5</button>
-            <button type="button" class="btn btn-primary">6</button>
-            <button type="button" class="btn btn-primary">7</button>
-            <button type="button" class="btn btn-primary">8</button>
-            <button type="button" class="btn btn-primary">9</button>
-            <button type="button" class="btn btn-primary">10</button>
-            <button type="button" class="btn btn-primary">11</button>
-            <button type="button" class="btn btn-primary">12</button>
-
-        </div>
+    <div class="d-flex align-items-center justify-content-center ">
+        <form method="POST" action="carrito.php" id="formularioMesa" class="" >
+            <label for="numeroMesa" class="text-bg-dark p-3" >Por Favor Ingresa el numero de la mesa en la que te encuentras aqui </label><br>
+            <input type="text" id="numeroMesa" name="numeroMesa" class="form-control w-100 p-1 text-bg-primary p-1"><br>    
+            <button type="submit" id="numeroMesa" onclick="mostrarMesa()" class="btn btn-success w-100 p-3 ">Asegurar Mesa!</button>
+        </form>
     </div>
     <section class="py-5">
         <div class="container px-4 px-lg-5">
